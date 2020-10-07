@@ -9,7 +9,9 @@
 >
 > Note: In Windows Server 2012 R2, virtual machine snapshots were renamed to virtual machine checkpoints. For clarity, this document will refer to virtual machine snapshots as checkpoints. - [Checkpoint-VM - Hyper-V - PowerShell](https://docs.microsoft.com/en-us/powershell/module/hyper-v/checkpoint-vm?view=win10-ps)
 
-e.g. `Checkpoint-VM -VMName deblab -SnapshotName base_2020-09-30` would create a checkpoint for the virtual machine deblab and name it base_2020-09-30. So, if something were to go wrong during the use of said VM, you could turn the VM off and store from any checkpoint tied to it and go from there.
+Example:
+
+ `Checkpoint-VM -VMName deblab -SnapshotName base_2020-09-30` would create a checkpoint for the virtual machine deblab and name it base_2020-09-30. So, if something were to go wrong during the use of said VM, you could turn the VM off and store from any checkpoint tied to it and go from there.
 
 # Connect-VHD.ps1
 ## Role of script:
@@ -168,4 +170,3 @@ Example:
 
 ### Read-Host: What it is and how it works:
 > The `Read-Host` cmdlet reads a line of input from the console. You can use it to prompt a user for input. Because you can save the input as a secure string, you can use this cmdlet to prompt users for secure data, such as passwords, as well as shared data. [Read-Host - Microsoft.PowerShell.Utility - PowerShell](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Read-Host?view=powershell-7)
-
