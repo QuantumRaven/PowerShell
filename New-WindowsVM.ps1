@@ -1,22 +1,14 @@
-###########################################################################################
+####################################################################################################
 # Original Author: Chloe Carpenter
 #
 # Role of script: This script is used to create new Generation 2 Windows VMs in Microsoft Hyper-V
-#
-# License: Unlicense - https://unlicense.org/
-###########################################################################################
+####################################################################################################
 
 ##################
 # Name of the VM
 ##################
 
 $VMName = Read-Host -Prompt "VMName"
-
-########################################
-# Path for VM Data
-########################################
-
-$VMPath = "F:\$VMName\"
 
 ###################
 # VM Generation 2
@@ -60,11 +52,17 @@ $MaxMemNumber = Read-Host -Prompt "Memory GB"
 
 $MaxMemSize = $MaxMem*$MaxMemNumber
 
-#########################
-# VHDX Path on F:\ drive
-#########################
+########################################
+# Path for VM Data
+########################################
 
-$VHDXPath = "E:\$VMname\$VMName.vhdx"
+$VMPath = "L:\$VMName\"
+
+##################################
+# VHDX Path for VM Storage drive
+##################################
+
+$VHDXPath = "F:\$VMname\$VMName.vhdx"
 
 ###############
 # VHDX Size(s)
@@ -94,7 +92,7 @@ $CheckpointType = "Standard"
 # Secure Boot Template
 ########################
 
-$SBTemplate = "Microsoft Windows"
+$SBTemplate = "MicrosoftWindows"
 
 #############
 # Create VM

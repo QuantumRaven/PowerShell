@@ -34,4 +34,4 @@ Remove-VMHardDiskDrive -VMName $VMName -ControllerNumber $ContNum -ControllerLoc
 # Delete VHDX
 ###############
 
-Remove-Item -Path E:\$VMName\$VHDXName.vhdx -Confirm
+Remove-Item -Path F:\$VMName\$VHDXName.vhdx -Confirm

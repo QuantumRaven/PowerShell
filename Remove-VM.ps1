@@ -8,11 +8,11 @@
 
 $VMName = Read-Host -Prompt "VMName"
 
-$VHDXFile = "E:\$VMName\$VMName.vhdx"
+$VHDXFile = "F:\$VMName\$VMName.vhdx"
 
-$VHDXFolder = "E:\$VMName"
+$VHDXFolder = "F:\$VMName"
 
-$VMData = "F:\$VMName"
+$VMData = "L:\$VMName"
 
 Remove-VM -VMName $VMName
 

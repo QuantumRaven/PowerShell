@@ -39,9 +39,9 @@ $ContLoc = Read-Host -Prompt "Controller Location"
 ###############
 # Create VHDX
 ###############
-New-VHD -Path E:\$VMName\$VHDXName.vhdx -SizeBytes $VDiskSize -Dynamic
+New-VHD -Path F:\$VMName\$VHDXName.vhdx -SizeBytes $VDiskSize -Dynamic
 
 ######################
 # Connect VHDX to VM
 ######################
-Add-VMHardDiskDrive -VMName $VMName -ControllerNumber $ContNum -ControllerLocation $ContLoc -Path E:\$VMName\$VHDXName.vhdx
+Add-VMHardDiskDrive -VMName $VMName -ControllerNumber $ContNum -ControllerLocation $ContLoc -Path F:\$VMName\$VHDXName.vhdx

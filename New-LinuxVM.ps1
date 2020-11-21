@@ -10,12 +10,6 @@
 
 $VMName = Read-Host -Prompt "VMName"
 
-####################
-# Path for VM Data
-####################
-
-$VMPath = "F:\$VMName\"
-
 ###################
 # VM Generation 2
 ###################
@@ -58,11 +52,17 @@ $MaxMemNumber = Read-Host -Prompt "Memory GB"
 
 $MaxMemSize = $MaxMem*$MaxMemNumber
 
+####################
+# Path for VM Data
+####################
+
+$VMPath = "L:\$VMName\"
+
 #############
 # VHDX Path 
 #############
 
-$VHDXPath = "E:\$VMname\$VMName.vhdx"
+$VHDXPath = "F:\$VMname\$VMName.vhdx"
 
 ###############
 # VHDX Size(s)
@@ -108,12 +108,14 @@ New-VM -Name $VMName -MemoryStartupBytes $StartMem `
 ##########################
 
 Set-VM -VMName $VMName -ProcessorCount $ProcCount -DynamicMemory `
--MemoryMinimumBytes $MinMem -MemoryMaximumBytes $MaxMem `
+-MemoryMinimumBytes $MinMem -MemoryMaximumBytes $MaxMemSize `
 -CheckpointType $CheckpointType -AutomaticCheckpointsEnabled $False
 
 Write-Host "Select from ISO from D drive `
+D:\ISO\ArchLinux.iso `
 D:\ISO\CentOS8.2-min.iso `
 D:\ISO\Debian10.iso `
+D:\ISO\UbuntuServer20.iso `
 `n"
 
 Add-VMDvdDrive -VMName $VMName -Path (Read-Host -Prompt "Select ISO File")

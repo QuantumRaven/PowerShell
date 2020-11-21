@@ -9,7 +9,3 @@
 Remove-VirtualDisk -FriendlyName VM_Storage
 
 Remove-VirtualDisk -FriendlyName VM_Data
-
-Remove-VirtualDisk -FriendlyName Apps
-
-Remove-StoragePool -FriendlyName LoC

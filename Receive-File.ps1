@@ -3,8 +3,6 @@
 #
 # Role of script: This script downloads files from the internet, based on the URL
 # the user adds
-#
-# License: Unlicense - https://unlicense.org/
 ###########################################################################################
 
 $url = Read-Host -Prompt "Download Source URL"

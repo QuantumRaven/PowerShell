@@ -1,0 +1,6 @@
+Start-Process -FilePath "J:\KeePass2\KeePass.exe"
+Start-Process -FilePath "J:\obs-studio\bin\64bit\obs64.exe"
+Start-Process -FilePath "J:\TelegramDesktop\Telegram.exe"
+Start-Process -FilePath "C:\Users\Chloe\AppData\Local\Discord\Update.exe --processStart Discord.exe"
+Start-Process -FilePath "C:\Users\Chloe\AppData\Local\LINE\bin\LineLauncher.exe"
+Start-Process -FilePath "C:\Users\Chloe\AppData\Local\WhatsApp\WhatsApp.exe"
