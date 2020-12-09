@@ -141,7 +141,7 @@ Example:
 >
 > You can specify either the type of a .NET Framework class or a ProgID of a COM object. By default, you type the fully qualified name of a .NET Framework class and the cmdlet returns a reference to an instance of that class. To create an instance of a COM object, use the __ComObject__ parameter and specify the ProgID of the object as its value. - [New-Object - Microsoft.PowerShell.Utility - PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-object?view=powershell-7)
 
-# Remote-StoragePool.ps1
+# Remove-StoragePool.ps1
 ## Role of script:
 - Removes Virtual Disks from storage pool and then removes the storage pool itself from existence
 
