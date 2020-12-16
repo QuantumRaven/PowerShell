@@ -1,10 +1,9 @@
-########################################################################################################
-# Original Author: Chloe Carpenter
-#
-# Role of script: Removes the specified virtual machine and deletes all data and the associated VHDX file tied to it
-#
-# License: Unlicense - https://unlicense.org/
-#########################################################################################################
+<#
+    Original Author: Chloe Carpenter
+
+    Role of script: Removes the specified virtual machine and deletes all data and the associated VHDX file tied to it
+#>
+
 
 $VMName = Read-Host -Prompt "VMName"
 
@@ -14,10 +13,10 @@ $VHDXFolder = "F:\$VMName"
 
 $VMData = "L:\$VMName"
 
-Remove-VM -VMName $VMName
+Remove-VM -VMName $VMName -Force
 
-Remove-Item -Path $VHDXFile
+Remove-Item -Path $VHDXFile -Recurse
 
-Remove-Item -Path $VHDXFolder
+Remove-Item -Path $VHDXFolder -Recurse
 
-Remove-Item -Path $VMData
+Remove-Item -Path $VMData -Recurse
