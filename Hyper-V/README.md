@@ -130,3 +130,21 @@ Example:
 
 ### Read-Host: What it is and how it works:
 > The `Read-Host` cmdlet reads a line of input from the console. You can use it to prompt a user for input. Because you can save the input as a secure string, you can use this cmdlet to prompt users for secure data, such as passwords, as well as shared data. [Read-Host - Microsoft.PowerShell.Utility - PowerShell](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Read-Host?view=powershell-7)
+
+# Remove-VM.ps1
+## Role of script:
+- Deletes virtual machine
+- Deletes all VHD files
+- Deletes all VM data files
+
+### Remove-VM: What it is and how it works:
+> The `Remove-VM` cmdlet deletes a virtual machine. Running this cmdlet deletes the virtual machine's configuration file, but does not delete any virtual hard drives. If the virtual machine has any snapshots, these are deleted and merged into the virtual hard disk files after the virtual machine is deleted. [Remove-VM - Hyper-V - PowerShell](https://docs.microsoft.com/en-us/powershell/module/hyper-v/remove-vm?view=win10-ps)
+
+# Restore-VMSnapshot.ps1
+## Role of script:
+- Restores the VM from a specified checkpoint
+
+### Restore-VM: What it is and how it works:
+> The Restore-VMSnapshot cmdlet restores a virtual machine checkpoint.
+>
+> Note: In Windows Server 2012 R2, virtual machine snapshots were renamed to virtual machine checkpoints. For clarity, this document will refer to virtual machine snapshots as checkpoints. [Restore-VM - Hyper-V - PowerShell](https://docs.microsoft.com/en-us/powershell/module/hyper-v/restore-vmsnapshot?view=win10-ps)
