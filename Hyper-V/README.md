@@ -77,16 +77,6 @@ Example:
 ### Enable-VMIntegrationService: What it is and what it does:
 > The Enable-VMIntegrationService cmdlet enables an integration service on a virtual machine. [Enable-VMIntegrationService - Hyper-V - PowerShell](https://docs.microsoft.com/en-us/powershell/module/hyper-v/Enable-VMIntegrationService?view=win10-ps)
 
-# New-StoragePool.ps1
-## Role of script:
-- Creates a new, custom storage pool
-
-### Get-PhysicalDisk: What it is and how it works:
-> The Get-PhysicalDisk cmdlet gets a list of all PhysicalDisk objects visible across any available Storage Management Providers, or optionally a filtered list of disks. [Get-PhysicalDisk - Storage - PowerShell](https://docs.microsoft.com/en-us/powershell/module/storage/Get-PhysicalDisk?view=win10-ps)
-
-### New-StoragePool: What it is and how it works:
-> The New-StoragePool cmdlet creates a new storage pool using a group of physical disks exposed by a specific storage subsystem. [New-StoragePool - Storage - PowerShell](https://docs.microsoft.com/en-us/powershell/module/storage/New-StoragePool?view=win10-ps)
-
 # New-WindowsVM.ps1
 ## Role of script:
 - Creates and sets up virtual hardware for Windows based virtual machines
@@ -120,36 +110,6 @@ Example:
 
 ### Enable-VMIntegrationService: What it is and what it does:
 > The Enable-VMIntegrationService cmdlet enables an integration service on a virtual machine. [Enable-VMIntegrationService - Hyper-V - PowerShell](https://docs.microsoft.com/en-us/powershell/module/hyper-v/Enable-VMIntegrationService?view=win10-ps)
-
-# Receive-File.ps1
-## Role of script:
-- Downloads specified file from the internet, based on the URL provided
-
-### Read-Host: What it is and how it works:
-> The `Read-Host` cmdlet reads a line of input from the console. You can use it to prompt a user for input. Because you can save the input as a secure string, you can use this cmdlet to prompt users for secure data, such as passwords, as well as shared data. [Read-Host - Microsoft.PowerShell.Utility - PowerShell](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Read-Host?view=powershell-7)
-
-### Write-Host: What it is and what it does:
-> The `Write-Host` cmdlet's primary purpose is to produce for-(host)-display-only output, such as printing colored text like when prompting the user for input in conjunction with [Read-Host](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/read-host?view=powershell-7). `Write-Host` uses the [ToString()](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring) method to write the output. By contrast, to output data to the pipeline, use [Write-Output](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/write-output?view=powershell-7) or implicit output.
->
-> You can specify the color of text by using the `ForegroundColor` parameter, and you can specify the background color by using the `BackgroundColor` parameter. The Separator parameter lets you specify a string to use to separate displayed objects. The particular result depends on the program that is hosting PowerShell.
-
-### Read-Host: What it is and how it works:
-> The `Read-Host` cmdlet reads a line of input from the console. You can use it to prompt a user for input. Because you can save the input as a secure string, you can use this cmdlet to prompt users for secure data, such as passwords, as well as shared data. [Read-Host - Microsoft.PowerShell.Utility - PowerShell](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Read-Host?view=powershell-7)
-
-### New-Object: What is it and how it works:
-> The `New-Object` cmdlet creates an instance of a .NET Framework or COM object.
->
-> You can specify either the type of a .NET Framework class or a ProgID of a COM object. By default, you type the fully qualified name of a .NET Framework class and the cmdlet returns a reference to an instance of that class. To create an instance of a COM object, use the __ComObject__ parameter and specify the ProgID of the object as its value. - [New-Object - Microsoft.PowerShell.Utility - PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-object?view=powershell-7)
-
-# Remove-StoragePool.ps1
-## Role of script:
-- Removes Virtual Disks from storage pool and then removes the storage pool itself from existence
-
-### Remove-VirtualDisk: What it is and how it works:
-> The `Remove-VirtualDisk` cmdlet deletes an existing virtual disk and reclaims the used space for use by other virtual disks in the same StoragePool object. This action also deletes any associated file system located on the virtual disk. [Remove-VirtualDisk - Storage - PowerShell](https://docs.microsoft.com/en-us/powershell/module/storage/Remove-VirtualDisk?view=win10-ps)
-
-### Remove-StoragePool: What it is and what it does:
-> The `Remove-StoragePool` cmdlet deletes a storage pool. If the storage pool contains virtual disks, you must delete the virtual disks prior to removing the storage pool. [Remove-StoragePool - Storage - PowerShell](https://docs.microsoft.com/en-us/powershell/module/storage/Remove-StoragePool?view=win10-ps)
 
 # Remove-VM.ps1
 ## Role of script:
