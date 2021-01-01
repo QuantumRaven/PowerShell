@@ -12,4 +12,4 @@ $physical_disk = (Get-PhysicalDisk -CanPool $True)
 
 # Create a new Storage Pool
 
-New-StoragePool -FriendlyName "library_of_chloe" -StorageSubSystemFriendlyName "Windows Storage*" -PhysicalDisks $physical_disk -ProvisioningTypeDefault Thin
+New-StoragePool -FriendlyName (Read-Host -Prompt "Friendly Name") -StorageSubSystemFriendlyName "Windows Storage*" -PhysicalDisks $physical_disk -ProvisioningTypeDefault Thin
